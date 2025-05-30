@@ -25,7 +25,7 @@ namespace AmagerminIT.Pages.Achievements
         }
 
         [BindProperty]
-        public Achievements Achievements { get; set; } = default!;
+        public Achievement Achievements { get; set; } = default!;
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()

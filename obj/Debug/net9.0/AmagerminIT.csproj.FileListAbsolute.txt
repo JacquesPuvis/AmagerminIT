@@ -293,7 +293,6 @@
 /home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/scopedcss/bundle/AmagerminIT.styles.css
 /home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/scopedcss/projectbundle/AmagerminIT.bundle.scp.css
 /home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/w0i19ycg07-lugek5hnai.gz
-/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/302o58olqz-61n19gt1b8.gz
 /home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/18jddz4yoa-fr7q2aak1r.gz
 /home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/8rqfaefovm-bqjiyaj88i.gz
 /home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/ffgfc5jr3y-c2jlpeoesf.gz
@@ -443,3 +442,5 @@
 /home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/v0zgfp0y55-87fc7y1x7t.gz
 /home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/yfc7ypekbg-mlv21k5csn.gz
 /home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/AmagerminIT.sourcelink.json
+/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/302o58olqz-qljlqndu7m.gz
+/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/po1l61e14s-61n19gt1b8.gz

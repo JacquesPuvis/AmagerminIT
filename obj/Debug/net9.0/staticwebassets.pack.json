@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/wwwroot/favicon2.ico",
+      "PackagePath": "staticwebassets/favicon2.ico"
+    },
+    {
       "Id": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

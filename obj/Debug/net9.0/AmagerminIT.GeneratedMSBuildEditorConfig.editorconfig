@@ -184,6 +184,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/Pages/Achievements/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWNoaWV2ZW1lbnRzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/Pages/Achievements/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWNoaWV2ZW1lbnRzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/Pages/Achievements/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWNoaWV2ZW1lbnRzL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/Pages/Achievements/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWNoaWV2ZW1lbnRzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/Pages/Achievements/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWNoaWV2ZW1lbnRzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/Pages/Admin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRtaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

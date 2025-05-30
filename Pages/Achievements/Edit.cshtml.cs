@@ -21,7 +21,7 @@ namespace AmagerminIT.Pages.Achievements
         }
 
         [BindProperty]
-        public Achievements Achievements { get; set; } = default!;
+        public Achievement Achievements { get; set; } = default!;
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {

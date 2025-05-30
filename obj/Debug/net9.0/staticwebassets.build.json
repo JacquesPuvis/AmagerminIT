@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QD7iyaH9BOhiSCEeov88VNItvReQbl9XW5ekQrKHbCc=",
+  "Hash": "nc+vhnRF1YdeQdIYOmK1LmNaq9YCOYfkSkQTvNHKoas=",
   "Source": "AmagerminIT",
   "BasePath": "_content/AmagerminIT",
   "Mode": "Default",
@@ -1508,12 +1508,12 @@
       "OriginalItemSpec": "/home/jacquespuvis/.nuget/packages/microsoft.aspnetcore.identity.ui/9.0.5/staticwebassets/V5/lib/jquery-validation/dist/jquery.validate.min.js"
     },
     {
-      "Identity": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/302o58olqz-61n19gt1b8.gz",
+      "Identity": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/302o58olqz-qljlqndu7m.gz",
       "SourceId": "AmagerminIT",
       "SourceType": "Discovered",
       "ContentRoot": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/AmagerminIT",
-      "RelativePath": "favicon#[.{fingerprint=61n19gt1b8}]?.ico.gz",
+      "RelativePath": "favicon#[.{fingerprint=qljlqndu7m}]?.ico.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1522,8 +1522,8 @@
       "RelatedAsset": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/wwwroot/favicon.ico",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "gjtj35e07v",
-      "Integrity": "tOy5kS1PTkjkEg7bjV8bJa0VpoEZJUHnbqYmm1YyhMg=",
+      "Fingerprint": "lf3w1ytqdz",
+      "Integrity": "YZJaSBbqoGsCk6ozWb3vlELQgN5UjFkcHVhQt18Qqdo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/wwwroot/favicon.ico"
@@ -3188,6 +3188,27 @@
       "OriginalItemSpec": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
+      "Identity": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/po1l61e14s-61n19gt1b8.gz",
+      "SourceId": "AmagerminIT",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/AmagerminIT",
+      "RelativePath": "favicon2#[.{fingerprint=61n19gt1b8}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/wwwroot/favicon2.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "gjtj35e07v",
+      "Integrity": "tOy5kS1PTkjkEg7bjV8bJa0VpoEZJUHnbqYmm1YyhMg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/wwwroot/favicon2.ico"
+    },
+    {
       "Identity": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/pogzkicjpz-0j3bgjxly4.gz",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
@@ -4063,11 +4084,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "qljlqndu7m",
+      "Integrity": "gkPDpqvj/MTpdvoKl1uzTtNxtDV6vcTf4goV0jY0UQw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/wwwroot/favicon2.ico",
+      "SourceId": "AmagerminIT",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/wwwroot/",
+      "BasePath": "_content/AmagerminIT",
+      "RelativePath": "favicon2#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
       "Fingerprint": "61n19gt1b8",
       "Integrity": "Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/favicon.ico"
+      "OriginalItemSpec": "wwwroot/favicon2.ico"
     },
     {
       "Identity": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/wwwroot/js/site.js",
@@ -6247,8 +6289,306 @@
       ]
     },
     {
-      "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/302o58olqz-61n19gt1b8.gz",
+      "Route": "favicon.ico",
+      "AssetFile": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/302o58olqz-qljlqndu7m.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002083333333"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "479"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YZJaSBbqoGsCk6ozWb3vlELQgN5UjFkcHVhQt18Qqdo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 17:17:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gkPDpqvj/MTpdvoKl1uzTtNxtDV6vcTf4goV0jY0UQw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gkPDpqvj/MTpdvoKl1uzTtNxtDV6vcTf4goV0jY0UQw="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ico",
+      "AssetFile": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/wwwroot/favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "456"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gkPDpqvj/MTpdvoKl1uzTtNxtDV6vcTf4goV0jY0UQw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 17:17:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gkPDpqvj/MTpdvoKl1uzTtNxtDV6vcTf4goV0jY0UQw="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ico.gz",
+      "AssetFile": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/302o58olqz-qljlqndu7m.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "479"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YZJaSBbqoGsCk6ozWb3vlELQgN5UjFkcHVhQt18Qqdo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 17:17:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YZJaSBbqoGsCk6ozWb3vlELQgN5UjFkcHVhQt18Qqdo="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.qljlqndu7m.ico",
+      "AssetFile": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/302o58olqz-qljlqndu7m.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002083333333"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "479"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YZJaSBbqoGsCk6ozWb3vlELQgN5UjFkcHVhQt18Qqdo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 17:17:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"gkPDpqvj/MTpdvoKl1uzTtNxtDV6vcTf4goV0jY0UQw=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qljlqndu7m"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gkPDpqvj/MTpdvoKl1uzTtNxtDV6vcTf4goV0jY0UQw="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.qljlqndu7m.ico",
+      "AssetFile": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/wwwroot/favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "456"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gkPDpqvj/MTpdvoKl1uzTtNxtDV6vcTf4goV0jY0UQw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 17:17:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qljlqndu7m"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gkPDpqvj/MTpdvoKl1uzTtNxtDV6vcTf4goV0jY0UQw="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.qljlqndu7m.ico.gz",
+      "AssetFile": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/302o58olqz-qljlqndu7m.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "479"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YZJaSBbqoGsCk6ozWb3vlELQgN5UjFkcHVhQt18Qqdo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 30 May 2025 17:17:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qljlqndu7m"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YZJaSBbqoGsCk6ozWb3vlELQgN5UjFkcHVhQt18Qqdo="
+        }
+      ]
+    },
+    {
+      "Route": "favicon2.61n19gt1b8.ico",
+      "AssetFile": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/po1l61e14s-61n19gt1b8.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -6301,7 +6641,7 @@
         },
         {
           "Name": "label",
-          "Value": "favicon.ico"
+          "Value": "favicon2.ico"
         },
         {
           "Name": "integrity",
@@ -6310,8 +6650,8 @@
       ]
     },
     {
-      "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/wwwroot/favicon.ico",
+      "Route": "favicon2.61n19gt1b8.ico",
+      "AssetFile": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/wwwroot/favicon2.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6346,7 +6686,7 @@
         },
         {
           "Name": "label",
-          "Value": "favicon.ico"
+          "Value": "favicon2.ico"
         },
         {
           "Name": "integrity",
@@ -6355,8 +6695,8 @@
       ]
     },
     {
-      "Route": "favicon.61n19gt1b8.ico.gz",
-      "AssetFile": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/302o58olqz-61n19gt1b8.gz",
+      "Route": "favicon2.61n19gt1b8.ico.gz",
+      "AssetFile": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/po1l61e14s-61n19gt1b8.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6399,7 +6739,7 @@
         },
         {
           "Name": "label",
-          "Value": "favicon.ico.gz"
+          "Value": "favicon2.ico.gz"
         },
         {
           "Name": "integrity",
@@ -6408,8 +6748,8 @@
       ]
     },
     {
-      "Route": "favicon.ico",
-      "AssetFile": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/302o58olqz-61n19gt1b8.gz",
+      "Route": "favicon2.ico",
+      "AssetFile": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/po1l61e14s-61n19gt1b8.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -6463,8 +6803,8 @@
       ]
     },
     {
-      "Route": "favicon.ico",
-      "AssetFile": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/wwwroot/favicon.ico",
+      "Route": "favicon2.ico",
+      "AssetFile": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/wwwroot/favicon2.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6500,8 +6840,8 @@
       ]
     },
     {
-      "Route": "favicon.ico.gz",
-      "AssetFile": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/302o58olqz-61n19gt1b8.gz",
+      "Route": "favicon2.ico.gz",
+      "AssetFile": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/Debug/net9.0/compressed/po1l61e14s-61n19gt1b8.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
