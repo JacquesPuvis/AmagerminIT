@@ -10,6 +10,6 @@ namespace AmagerminIT.Models
         public string? LastName { get; set; }
         public List<Achievement> Achievements { get; set; } = new List<Achievement>();
         
-        public bool? IsAdmin { get; set; }
+        public bool IsAdmin { get; set; }
     }
 }
