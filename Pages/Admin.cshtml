@@ -2,18 +2,25 @@
 @model AmagerminIT.Pages.Admin
 
 @{
+    ViewData["Title"] = "Admin Dashboard";
     Layout = "Shared/_Layout";
 }
 
-<!DOCTYPE html>
+<div class="container mt-4">
+    <h2 class="mb-4">Admin Dashboard</h2>
 
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-<div>
-    
+    <div class="card shadow-sm border-primary mb-4">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <span>Recent Achievements</span>
+            <a class="btn btn-light btn-sm" asp-page="/Achievements/Create">+ Create New</a>
+        </div>
+        <div class="card-body">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Achievement 1 - Description</li>
+                <li class="list-group-item">Achievement 2 - Description</li>
+                <li class="list-group-item">Achievement 3 - Description</li>
+                <!-- Replace with dynamic data -->
+            </ul>
+        </div>
+    </div>
 </div>
-</body>
-</html>
