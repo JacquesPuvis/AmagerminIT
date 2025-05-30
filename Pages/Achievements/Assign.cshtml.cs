@@ -25,13 +25,18 @@ namespace AmagerminIT.Pages.Achievements
         [BindProperty]
         public int SelectedAchievementId { get; set; }
 
+        [BindProperty]
+        public int AchievementToUnassignId { get; set; }
+
         public List<SelectListItem> UserSelectList { get; set; }
 
         public List<SelectListItem> AchievementSelectList { get; set; }
 
+        public List<UserAchievement> AssignedAchievements { get; set; }
+
         public string Message { get; set; }
 
-        public async Task OnGetAsync()
+        public async Task OnGetAsync(string selectedUserId = null)
         {
             // Load users for dropdown
             UserSelectList = await _context.Users
@@ -42,12 +47,27 @@ namespace AmagerminIT.Pages.Achievements
             AchievementSelectList = await _context.Achievements
                 .Select(a => new SelectListItem { Value = a.AchievementId.ToString(), Text = a.Name })
                 .ToListAsync();
+
+            if (!string.IsNullOrEmpty(selectedUserId))
+            {
+                SelectedUserId = selectedUserId;
+
+                // Load assigned achievements for selected user
+                AssignedAchievements = await _context.UserAchievements
+                    .Include(ua => ua.Achievement)
+                    .Where(ua => ua.UserId == selectedUserId)
+                    .ToListAsync();
+            }
+            else
+            {
+                AssignedAchievements = new List<UserAchievement>();
+            }
         }
 
         public async Task<IActionResult> OnPostAsync()
         {
-            // Reload dropdowns in case of error
-            await OnGetAsync();
+            // Reload dropdowns and assigned achievements
+            await OnGetAsync(SelectedUserId);
 
             if (string.IsNullOrEmpty(SelectedUserId) || SelectedAchievementId == 0)
             {
@@ -55,15 +75,9 @@ namespace AmagerminIT.Pages.Achievements
                 return Page();
             }
 
-            // TODO: Add your logic to assign the achievement to the user here.
-            // Assuming you have a join table UserAchievements or similar:
-
-            var userId = SelectedUserId;
-            var achievementId = SelectedAchievementId;
-
-            // Example: check if assignment already exists
+            // Check if already assigned
             bool alreadyAssigned = await _context.UserAchievements
-                .AnyAsync(ua => ua.UserId == userId && ua.AchievementId == achievementId);
+                .AnyAsync(ua => ua.UserId == SelectedUserId && ua.AchievementId == SelectedAchievementId);
 
             if (alreadyAssigned)
             {
@@ -73,8 +87,8 @@ namespace AmagerminIT.Pages.Achievements
 
             var userAchievement = new UserAchievement
             {
-                UserId = userId,
-                AchievementId = achievementId,
+                UserId = SelectedUserId,
+                AchievementId = SelectedAchievementId,
                 AssignedDate = System.DateTime.UtcNow
             };
 
@@ -82,6 +96,40 @@ namespace AmagerminIT.Pages.Achievements
             await _context.SaveChangesAsync();
 
             Message = "Achievement assigned successfully!";
+
+            // Reload assigned achievements
+            await OnGetAsync(SelectedUserId);
+
+            return Page();
+        }
+
+        public async Task<IActionResult> OnPostUnassignAsync()
+        {
+            if (string.IsNullOrEmpty(SelectedUserId) || AchievementToUnassignId == 0)
+            {
+                Message = "Please select a user and an assigned achievement to unassign.";
+                await OnGetAsync(SelectedUserId);
+                return Page();
+            }
+
+            var assignment = await _context.UserAchievements
+                .FirstOrDefaultAsync(ua => ua.UserId == SelectedUserId && ua.AchievementId == AchievementToUnassignId);
+
+            if (assignment == null)
+            {
+                Message = "This achievement is not assigned to the selected user.";
+                await OnGetAsync(SelectedUserId);
+                return Page();
+            }
+
+            _context.UserAchievements.Remove(assignment);
+            await _context.SaveChangesAsync();
+
+            Message = "Achievement unassigned successfully!";
+
+            // Reload assigned achievements
+            await OnGetAsync(SelectedUserId);
+
             return Page();
         }
     }

@@ -30,3 +30,34 @@
 {
     <div class="alert alert-info mt-3">@Model.Message</div>
 }
+
+@if (Model.AssignedAchievements != null && Model.AssignedAchievements.Count > 0)
+{
+    <h3 class="mt-4">Currently Assigned Achievements</h3>
+    <form method="post" asp-page-handler="Unassign">
+        <input type="hidden" asp-for="SelectedUserId" />
+        <div class="mb-3">
+            <label asp-for="AchievementToUnassignId" class="form-label">Select Achievement to Unassign</label>
+            <select asp-for="AchievementToUnassignId" class="form-select">
+                <option value="">-- Select Achievement --</option>
+                @foreach (var ua in Model.AssignedAchievements)
+                {
+                    <option value="@ua.AchievementId">@ua.Achievement.Name</option>
+                }
+            </select>
+        </div>
+        <button type="submit" class="btn btn-danger">Unassign Achievement</button>
+    </form>
+}
+
+<script>
+    // Reload page when user is changed to load assigned achievements
+    document.querySelector('select[name="SelectedUserId"]').addEventListener('change', function () {
+        var userId = this.value;
+        if (userId) {
+            window.location.href = `?selectedUserId=${userId}`;
+        } else {
+            window.location.href = '/Achievements/Assign';
+        }
+    });
+</script>
