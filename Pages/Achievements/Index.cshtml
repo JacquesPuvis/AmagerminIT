@@ -1,16 +1,21 @@
 @page
+@using AmagerminIT.Models
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@inject UserManager<User> UserManager
+
 @model AmagerminIT.Pages.Achievements.IndexModel
 
 @{
     ViewData["Title"] = "Index";
-    Layout = "Shared/_Layout.cshtml";
+    Layout = "Shared/_Layout";
 }
 
-<h1>Index</h1>
-
+<h1>Achievements</h1>
 <p>
-    <a asp-page="Create">Create New</a>
+    See a list of all the achievements!
 </p>
+
 <table class="table">
     <thead>
         <tr>
@@ -32,12 +37,22 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.AchievementId">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.AchievementId">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.AchievementId">Delete</a>
-            </td>
-        </tr>
+            @{
+                User currentUser = null;
+                if (User.Identity.IsAuthenticated)
+                {
+                    currentUser = await UserManager.GetUserAsync(User);
+                }
+            }
+            @if (currentUser.IsAdmin)
+            {
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.AchievementId">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.AchievementId">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.AchievementId">Delete</a>
+                </td>
+            }
+    </tr>
 }
     </tbody>
 </table>

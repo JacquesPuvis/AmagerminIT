@@ -1,9 +1,9 @@
 @page "/Admin"
-@model AmagerminIT.Pages.Admin
+@model AmagerminIT.Pages.AdminModel
 
 @{
     ViewData["Title"] = "Admin Dashboard";
-    Layout = "Shared/_Layout";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
 }
 
 <div class="container mt-4">
@@ -15,12 +15,21 @@
             <a class="btn btn-light btn-sm" asp-page="/Achievements/Create">+ Create New</a>
         </div>
         <div class="card-body">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Achievement 1 - Description</li>
-                <li class="list-group-item">Achievement 2 - Description</li>
-                <li class="list-group-item">Achievement 3 - Description</li>
-                <!-- Replace with dynamic data -->
-            </ul>
+            @if (Model.Achievements != null && Model.Achievements.Count > 0)
+            {
+                <ul class="list-group list-group-flush">
+                    @foreach (var achievement in Model.Achievements)
+                    {
+                        <li class="list-group-item">
+                            <strong>@achievement.Name</strong> - @achievement.Description
+                        </li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <div class="alert alert-info">No achievements found.</div>
+            }
         </div>
     </div>
 </div>

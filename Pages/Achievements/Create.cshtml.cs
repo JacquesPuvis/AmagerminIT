@@ -36,6 +36,7 @@ namespace AmagerminIT.Pages.Achievements
             }
 
             _context.Achievements.Add(Achievements);
+            // I am adding the new achievements to the list here
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

@@ -1,29 +1,29 @@
-using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Identity;
-using AmagerminIT.Models;  // Your User class namespace
+using AmagerminIT.Data;
+using AmagerminIT.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace AmagerminIT.Pages
 {
-    public class Admin : PageModel
+    public class AdminModel : PageModel
     {
-        private readonly UserManager<User> _userManager;
+        private readonly AmagerminITContext _context;
 
-        public Admin(UserManager<User> userManager)
+        public AdminModel(AmagerminITContext context)
         {
-            _userManager = userManager;
+            _context = context;
         }
 
-        public async Task<IActionResult> OnGet()
+        public List<Achievement> Achievements { get; set; } = new List<Achievement>();
+
+        public async Task OnGetAsync()
         {
-            var user = await _userManager.GetUserAsync(User);
-
-            if (user == null || user.IsAdmin != true)
-            {
-                return RedirectToPage("/Home"); 
-            }
-
-            return Page();
+            // Load achievements, e.g. the newest 5 achievements sorted by date descending
+            Achievements = await _context.Achievements
+                .Take(5)
+                .ToListAsync();
         }
     }
 }
