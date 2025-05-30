@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+p77rtZwR0c=",
+  "dgSpecHash": "eZmGGvT79+c=",
   "success": true,
-  "projectFilePath": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/AmagerminIT.csproj",
+  "projectFilePath": "/home/jacquespuvis/AmagerminIT/AmagerminIT/AmagerminIT.csproj",
   "expectedPackageFiles": [
     "/home/jacquespuvis/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/home/jacquespuvis/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",
