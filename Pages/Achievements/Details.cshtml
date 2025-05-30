@@ -1,0 +1,32 @@
+@page
+@model AmagerminIT.Pages.Achievements.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Achievement</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Achievements.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Achievements.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Achievements.Description)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Achievements.Description)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Achievements.AchievementId">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

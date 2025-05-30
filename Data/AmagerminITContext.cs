@@ -16,7 +16,7 @@ namespace AmagerminIT.Data
         }
 
         public DbSet<AmagerminIT.Models.User> User { get; set; } = default!;
-        public DbSet<Achievements> Achievements { get; set; }
+        public DbSet<Achievement> Achievements { get; set; }
 
     }
 }

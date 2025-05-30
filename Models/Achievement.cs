@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace AmagerminIT.Models;
 
-public class Achievements
+public class Achievement
 {
     [Key]
     public int AchievementId { get; set; }

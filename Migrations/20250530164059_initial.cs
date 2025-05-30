@@ -76,7 +76,7 @@ namespace AmagerminIT.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Achievements",
+                name: "Achievement",
                 columns: table => new
                 {
                     AchievementId = table.Column<int>(type: "INTEGER", nullable: false)
@@ -182,7 +182,7 @@ namespace AmagerminIT.Migrations
 
             migrationBuilder.CreateIndex(
                 name: "IX_Achievements_UserId",
-                table: "Achievements",
+                table: "Achievement",
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
@@ -227,7 +227,7 @@ namespace AmagerminIT.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Achievements");
+                name: "Achievement");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoleClaims");

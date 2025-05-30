@@ -17,7 +17,7 @@ namespace AmagerminIT.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.5");
 
-            modelBuilder.Entity("AmagerminIT.Models.Achievements", b =>
+            modelBuilder.Entity("AmagerminIT.Models.Achievement", b =>
                 {
                     b.Property<int>("AchievementId")
                         .ValueGeneratedOnAdd()
@@ -38,7 +38,7 @@ namespace AmagerminIT.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Achievements");
+                    b.ToTable("Achievement");
                 });
 
             modelBuilder.Entity("AmagerminIT.Models.User", b =>
@@ -250,10 +250,10 @@ namespace AmagerminIT.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("AmagerminIT.Models.Achievements", b =>
+            modelBuilder.Entity("AmagerminIT.Models.Achievement", b =>
                 {
                     b.HasOne("AmagerminIT.Models.User", null)
-                        .WithMany("Achievements")
+                        .WithMany("Achievement")
                         .HasForeignKey("UserId");
                 });
 
@@ -310,7 +310,7 @@ namespace AmagerminIT.Migrations
 
             modelBuilder.Entity("AmagerminIT.Models.User", b =>
                 {
-                    b.Navigation("Achievements");
+                    b.Navigation("Achievement");
                 });
 #pragma warning restore 612, 618
         }

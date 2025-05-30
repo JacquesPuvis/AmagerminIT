@@ -8,7 +8,7 @@ namespace AmagerminIT.Models
         public string DisplayName { get; set; }
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
-        public List<Achievements> Achievements { get; set; } = new List<Achievements>();
+        public List<Achievement> Achievements { get; set; } = new List<Achievement>();
         
         public bool? IsAdmin { get; set; }
     }
