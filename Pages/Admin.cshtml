@@ -12,7 +12,10 @@
     <div class="card shadow-sm border-primary mb-4">
         <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
             <span>Recent Achievements</span>
-            <a class="btn btn-light btn-sm" asp-page="/Achievements/Create">+ Create New</a>
+            <div class="d-flex gap-2">
+                <a class="btn btn-light btn-sm" asp-page="/Achievements/Assign">Assign Achievement</a>
+                <a class="btn btn-light btn-sm" asp-page="/Achievements/Create">+ Create New</a>
+            </div>
         </div>
         <div class="card-body">
             @if (Model.Achievements != null && Model.Achievements.Count > 0)

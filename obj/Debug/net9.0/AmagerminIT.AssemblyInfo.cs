@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AmagerminIT")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8ec50769da68645546e6d3273f4d2628dd186e0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d308c7c5a6a320af07109106a524e05c04e2411")]
 [assembly: System.Reflection.AssemblyProductAttribute("AmagerminIT")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AmagerminIT")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

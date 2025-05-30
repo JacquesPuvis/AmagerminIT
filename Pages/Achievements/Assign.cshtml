@@ -1,0 +1,32 @@
+@page
+@model AmagerminIT.Pages.Achievements.AssignModel
+
+@{
+    ViewData["Title"] = "Assign Achievement to User";
+    Layout = "~/Pages/Shared/_Layout.cshtml"; // or your layout path
+}
+
+<h2>Assign Achievement to User</h2>
+
+<form method="post">
+    <div class="mb-3">
+        <label asp-for="SelectedUserId" class="form-label">Select User</label>
+        <select asp-for="SelectedUserId" class="form-select" asp-items="Model.UserSelectList">
+            <option value="">-- Select User --</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="SelectedAchievementId" class="form-label">Select Achievement</label>
+        <select asp-for="SelectedAchievementId" class="form-select" asp-items="Model.AchievementSelectList">
+            <option value="">-- Select Achievement --</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Assign</button>
+</form>
+
+@if (Model.Message != null)
+{
+    <div class="alert alert-info mt-3">@Model.Message</div>
+}

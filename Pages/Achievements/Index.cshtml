@@ -29,11 +29,15 @@
                 <ul class="list-group list-group-flush">
                     @foreach (var achievement in Model.Achievements)
                     {
-                        <li class="list-group-item">
-                            <strong>@achievement.Name</strong> - @achievement.Description
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span>
+                                <strong>@achievement.Name</strong> - @achievement.Description
+                            </span>
+                            <a asp-page="/Achievements/Edit" asp-route-id="@achievement.AchievementId" class="btn btn-sm btn-outline-primary">Edit</a>
                         </li>
                     }
                 </ul>
+
             }
             else
             {

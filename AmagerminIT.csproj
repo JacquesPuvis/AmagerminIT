@@ -19,7 +19,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Pages\Achievements\" />
       <Folder Include="wwwroot\achPics\" />
     </ItemGroup>
 

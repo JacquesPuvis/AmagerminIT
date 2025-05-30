@@ -16,12 +16,12 @@
                     Achievement
                 </div>
                 <div class="card-body">
-                    @if (Model.CurrentUser.Achievements != null && Model.CurrentUser.Achievements.Count > 0)
+                    @if (Model.CurrentUser.UserAchievements != null && Model.CurrentUser.UserAchievements.Count > 0)
                     {
                         <ul class="list-group list-group-flush">
-                            @foreach (var achievement in Model.CurrentUser.Achievements)
+                            @foreach (var UserAchievement in Model.CurrentUser.UserAchievements)
                             {
-                                <li class="list-group-item">@achievement.Name</li> <!-- Adjust field as needed -->
+                                <li class="list-group-item">@UserAchievement.Achievement.Name</li> <!-- Adjust field as needed -->
                             }
                         </ul>
                     }
