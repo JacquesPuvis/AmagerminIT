@@ -1,4 +1,5 @@
 @page "/PersonalPage"
+@using AmagerminIT.Models
 @model AmagerminIT.Pages.PersonalPageModel
 @{
     Layout = "Shared/_Layout";
@@ -16,12 +17,12 @@
                     Achievement
                 </div>
                 <div class="card-body">
-                    @if (Model.CurrentUser.UserAchievements != null && Model.CurrentUser.UserAchievements.Count > 0)
+                    @if (Model.UserAchievements != null && Model.UserAchievements.Count > 0)
                     {
                         <ul class="list-group list-group-flush">
-                            @foreach (var UserAchievement in Model.CurrentUser.UserAchievements)
+                            @foreach (var userAchievement in Model.UserAchievements)
                             {
-                                <li class="list-group-item">@UserAchievement.Achievement.Name</li> <!-- Adjust field as needed -->
+                                <li class="list-group-item">@userAchievement.Achievement.Name</li>
                             }
                         </ul>
                     }
