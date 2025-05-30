@@ -8615,11 +8615,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/AmagerminIT.csproj",
+      "projectUniqueName": "/home/jacquespuvis/AmagerminIT/AmagerminIT/AmagerminIT.csproj",
       "projectName": "AmagerminIT",
-      "projectPath": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/AmagerminIT.csproj",
+      "projectPath": "/home/jacquespuvis/AmagerminIT/AmagerminIT/AmagerminIT.csproj",
       "packagesPath": "/home/jacquespuvis/.nuget/packages/",
-      "outputPath": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/",
+      "outputPath": "/home/jacquespuvis/AmagerminIT/AmagerminIT/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/jacquespuvis/.nuget/NuGet/NuGet.Config"
