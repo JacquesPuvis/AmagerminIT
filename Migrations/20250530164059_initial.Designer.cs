@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AmagerminIT.Migrations
 {
     [DbContext(typeof(AmagerminITContext))]
-    [Migration("20250530103639_initial")]
+    [Migration("20250530164059_initial")]
     partial class initial
     {
         /// <inheritdoc />
@@ -54,6 +54,10 @@ namespace AmagerminIT.Migrations
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("DisplayName")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Email")

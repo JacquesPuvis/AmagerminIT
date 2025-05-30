@@ -30,6 +30,7 @@ namespace AmagerminIT.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "TEXT", nullable: false),
+                    DisplayName = table.Column<string>(type: "TEXT", nullable: false),
                     FirstName = table.Column<string>(type: "TEXT", nullable: true),
                     LastName = table.Column<string>(type: "TEXT", nullable: true),
                     IsAdmin = table.Column<bool>(type: "INTEGER", nullable: true),

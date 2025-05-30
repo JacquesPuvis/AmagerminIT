@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@using AmagerminIT.Models
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@inject UserManager<User> UserManager
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
@@ -29,14 +33,20 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="" asp-page="/Users/Index">Users</a>
                     </li>
-
+                    @{
+                        User currentUser = null;
+                        if (User.Identity.IsAuthenticated)
+                        {
+                            currentUser = await UserManager.GetUserAsync(User);
+                        }
+                    }
                     @if (User.Identity.IsAuthenticated)
                     {
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Logout">Logout</a>
                     </li>
                     <li class="nav-item">
-                        <span class="nav-link text-dark">Hello, @User.Identity.Name!</span>
+                        <span class="nav-link text-dark">Hello, @currentUser.DisplayName!</span>
                     </li>
                     }
                     else

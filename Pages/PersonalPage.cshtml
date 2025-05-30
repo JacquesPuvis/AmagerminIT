@@ -1,0 +1,36 @@
+@page "/PersonalPage"
+@model AmagerminIT.Pages.PersonalPageModel
+@{
+    Layout = "Shared/_Layout";
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8">
+            <h2>Welcome, @Model.CurrentUser.DisplayName!</h2>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    Achievements
+                </div>
+                <div class="card-body">
+                    @if (Model.CurrentUser.Achievements != null && Model.CurrentUser.Achievements.Count > 0)
+                    {
+                        <ul class="list-group list-group-flush">
+                            @foreach (var achievement in Model.CurrentUser.Achievements)
+                            {
+                                <li class="list-group-item">@achievement.Name</li> <!-- Adjust field as needed -->
+                            }
+                        </ul>
+                    }
+                    else
+                    {
+                        <p>No achievements yet.</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
