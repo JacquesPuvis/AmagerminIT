@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/jacquespuvis/AmagerminIT/AmagerminIT/AmagerminIT.csproj": {}
+    "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/AmagerminIT.csproj": {}
   },
   "projects": {
-    "/home/jacquespuvis/AmagerminIT/AmagerminIT/AmagerminIT.csproj": {
+    "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/AmagerminIT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/jacquespuvis/AmagerminIT/AmagerminIT/AmagerminIT.csproj",
+        "projectUniqueName": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/AmagerminIT.csproj",
         "projectName": "AmagerminIT",
-        "projectPath": "/home/jacquespuvis/AmagerminIT/AmagerminIT/AmagerminIT.csproj",
+        "projectPath": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/AmagerminIT.csproj",
         "packagesPath": "/home/jacquespuvis/.nuget/packages/",
-        "outputPath": "/home/jacquespuvis/AmagerminIT/AmagerminIT/obj/",
+        "outputPath": "/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/jacquespuvis/.nuget/NuGet/NuGet.Config"

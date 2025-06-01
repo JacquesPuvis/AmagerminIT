@@ -24,6 +24,13 @@
             <span>All Achievements</span>
         </div>
         <div class="card-body">
+            @{
+                User currentUser = null;
+                if (User.Identity.IsAuthenticated)
+                {
+                    currentUser = await UserManager.GetUserAsync(User);
+                }
+            }
             @if (Model.Achievements != null && Model.Achievements.Count > 0)
             {
                 <ul class="list-group list-group-flush">
@@ -33,7 +40,10 @@
                             <span>
                                 <strong>@achievement.Name</strong> - @achievement.Description
                             </span>
-                            <a asp-page="/Achievements/Edit" asp-route-id="@achievement.AchievementId" class="btn btn-sm btn-outline-primary">Edit</a>
+                            @if (currentUser.IsAdmin)
+                            {
+                                <a asp-page="/Achievements/Edit" asp-route-id="@achievement.AchievementId" class="btn btn-sm btn-outline-primary">Edit</a>
+                            }
                         </li>
                     }
                 </ul>
