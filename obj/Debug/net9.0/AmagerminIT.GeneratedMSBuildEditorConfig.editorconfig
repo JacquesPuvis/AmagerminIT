@@ -216,6 +216,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2FsZW5kYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/Pages/CalendarViewComponent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2FsZW5kYXJWaWV3Q29tcG9uZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/Pages/Home.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSG9tZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -226,6 +230,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/Pages/Shared/Components/Calendar/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL0NvbXBvbmVudHMvQ2FsZW5kYXIvRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/jacquespuvis/RiderProjects/AmagerminIT/AmagerminIT/Pages/Shared/_LoginPartial.cshtml]
